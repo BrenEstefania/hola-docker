@@ -3,12 +3,12 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors()); // 👈 ESTA LÍNEA ES CLAVE
+app.use(cors()); 
 
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.json({ mensaje: "Hola mundo desde Render 🚀" });
+  res.json({ mensaje: "Cambio automático funcionando 🔥" });
 });
 
 app.listen(PORT, "0.0.0.0", () => {
