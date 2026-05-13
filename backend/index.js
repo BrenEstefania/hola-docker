@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.json({ mensaje: "Hola mundo desde backend 🚀" });
+  res.json({ mensaje: "Hola mundo desde Render " });
 });
 
-app.listen(5000, () => console.log("Servidor en puerto 5000"));
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor en puerto ${PORT}`);
+});
