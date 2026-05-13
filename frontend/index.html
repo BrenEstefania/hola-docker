@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hola Mundo</title>
+</head>
+<body>
+  <h1>Hola mundo desde frontend 🌐</h1>
+  <button onclick="fetchData()">Probar backend</button>
+  <p id="res"></p>
+
+  <script>
+    function fetchData() {
+      fetch("http://localhost:5000")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("res").innerText = data.mensaje;
+        });
+    }
+  </script>
+</body>
+</html>
