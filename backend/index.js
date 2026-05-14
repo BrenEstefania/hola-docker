@@ -8,7 +8,7 @@ app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.json({ mensaje: "Cambio automático funcionando 🔥" });
+  res.json({ mensaje: "Cambio automático funcionando " });
 });
 
 app.listen(PORT, "0.0.0.0", () => {

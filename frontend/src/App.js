@@ -12,8 +12,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Frontend React </h1>
-      <h2>{mensaje}</h2>
+      <h1>Frontend actualizado Brenda </h1>
     </div>
   );
 }
